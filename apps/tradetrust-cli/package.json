@@ -1,0 +1,25 @@
+{
+  "name": "ebl-toolkit",
+  "version": "1.0.0",
+  "license": "MIT",
+  "bin": {
+    "ebl": "./bin/cli.js"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "dependencies": {
+    "@ethersproject/contracts": "^5.0.5",
+    "@govtechsg/open-attestation": "^3.7.0",
+    "@govtechsg/token-registry": "^2.3.0",
+    "commander": "^5.1.0",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "ethers": "^5.0.15",
+    "prompts": "^2.3.2",
+    "uuid": "^8.0.0"
+  },
+  "scripts": {
+    "start": "node -r esm index.js"
+  }
+}
